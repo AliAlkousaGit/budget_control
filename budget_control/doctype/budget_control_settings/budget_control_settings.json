@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_budget_control",
+  "control_action",
+  "warn_threshold_pct",
+  "column_break_1",
+  "section_break_info",
+  "info_html"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "enable_budget_control",
+   "fieldtype": "Check",
+   "label": "Enable Budget Control"
+  },
+  {
+   "default": "Stop",
+   "fieldname": "control_action",
+   "fieldtype": "Select",
+   "label": "Action When Budget Exceeded",
+   "options": "Stop\nWarn"
+  },
+  {
+   "default": "80",
+   "fieldname": "warn_threshold_pct",
+   "fieldtype": "Percent",
+   "label": "Warning Threshold %",
+   "description": "Show a warning when budget utilisation will exceed this percentage after the proposed PO"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_info",
+   "fieldtype": "Section Break",
+   "label": "How It Works"
+  },
+  {
+   "fieldname": "info_html",
+   "fieldtype": "HTML",
+   "options": "<div class='alert alert-info'><b>Budget Control Logic:</b><br><ul><li><b>Reserved Against PO</b> = Open PO commitments (submitted, not yet fully invoiced)</li><li><b>Actual Expense</b> = Submitted Purchase Invoice amounts</li><li><b>Advance Paid</b> = Payment Entries against POs (visibility only, not in budget consumption)</li><li><b>Available Budget</b> = Budget Amount &minus; Reserved Against PO &minus; Actual Expense</li><li>Control check runs at <b>Purchase Order submit</b></li></ul></div>"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Budget Control",
+ "name": "Budget Control Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 0,
+   "print": 1,
+   "read": 1,
+   "report": 0,
+   "role": "System Manager",
+   "share": 0,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 0,
+   "print": 1,
+   "read": 1,
+   "report": 0,
+   "role": "Accounts Manager",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 0
+}

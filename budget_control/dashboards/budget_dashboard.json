@@ -1,0 +1,107 @@
+{
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "dashboard_name": "Budget Control Dashboard",
+  "dashboard_category": "Accounting",
+  "dashboard_items": [
+    {
+      "card_type": "report",
+      "card_name": "Budget Amount",
+      "label": "Total Budget Allocated",
+      "report_name": "Budget Control Summary",
+      "report_type": "Script Report",
+      "col": 3,
+      "icon": "fa fa-calculator",
+      "title": "₹ Total Budget"
+    },
+    {
+      "card_type": "report",
+      "card_name": "Reserved PO",
+      "label": "Reserved Against Purchase Orders",
+      "report_name": "Budget Control Summary",
+      "report_type": "Script Report",
+      "col": 3,
+      "icon": "fa fa-shopping-cart",
+      "title": "₹ Reserved (PO)"
+    },
+    {
+      "card_type": "report",
+      "card_name": "Actual Expense",
+      "label": "Actual Recognized Expenses",
+      "report_name": "Budget Control Summary",
+      "report_type": "Script Report",
+      "col": 3,
+      "icon": "fa fa-invoice",
+      "title": "₹ Actual Expense"
+    },
+    {
+      "card_type": "report",
+      "card_name": "Available Budget",
+      "label": "Remaining Unallocated Budget",
+      "report_name": "Budget Control Summary",
+      "report_type": "Script Report",
+      "col": 3,
+      "icon": "fa fa-arrow-up",
+      "title": "₹ Available"
+    },
+    {
+      "card_type": "chart",
+      "card_name": "Budget Health Pie",
+      "label": "Budget Health Status Breakdown",
+      "chart_name": "Budget Status Pie",
+      "col": 6
+    },
+    {
+      "card_type": "chart",
+      "card_name": "Top Budgets",
+      "label": "Top 10 Projects by Utilisation",
+      "chart_name": "Budget Utilisation Chart",
+      "col": 6
+    },
+    {
+      "card_type": "shortcut",
+      "card_name": "Budget Report",
+      "label": "View Budget Report",
+      "link_to": "/app/query-report/Budget Control Summary",
+      "icon": "fa fa-bar-chart",
+      "col": 3,
+      "single_column": 1
+    },
+    {
+      "card_type": "shortcut",
+      "card_name": "Critical Budgets",
+      "label": "View Critical Budgets",
+      "link_to": "/app/query-report/Budget Control Summary?status=Critical",
+      "icon": "fa fa-exclamation-circle",
+      "col": 3,
+      "single_column": 1
+    },
+    {
+      "card_type": "shortcut",
+      "card_name": "Open Budgets",
+      "label": "Create New Budget",
+      "link_to": "/app/budget/new",
+      "icon": "fa fa-plus",
+      "col": 3,
+      "single_column": 1
+    },
+    {
+      "card_type": "shortcut",
+      "card_name": "All Budgets",
+      "label": "Browse All Budgets",
+      "link_to": "/app/budget",
+      "icon": "fa fa-list",
+      "col": 3,
+      "single_column": 1
+    }
+  ],
+  "charts": [],
+  "filters": {
+    "company": "All Companies",
+    "fiscal_year": "Current Fiscal Year"
+  },
+  "refresh_interval": 300,
+  "is_standard": 1,
+  "owner": "Administrator",
+  "modified_by": "Administrator"
+}

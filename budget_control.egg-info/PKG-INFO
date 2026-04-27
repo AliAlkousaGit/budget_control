@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: budget_control
+Version: 0.0.1
+Summary: Budget Control for Purchase Orders, Invoices and Payments
+Author: Golden Link
+Author-email: admin@golden-link.com
+Requires-Dist: frappe
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
